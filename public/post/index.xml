@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Rationally Misbehaved</title>
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 03 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>/post/</link>
+    </image>
+    
+    <item>
+      <title>Err..</title>
+      <link>/post/err-in/</link>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/err-in/</guid>
+      <description>&lt;p&gt;In the previous post we discussed about a model -
+$$D= a-bP+u$$&lt;br&gt;
+Here, we want to explain how the demand of certain goods changes with the price of that good. But there can be other factors which are affecting the demand for that good. If we go back to our energy drink example, Energy drink is popular in a certain age group. So, if that age group is missing from the area, demand for energy drink will be lower even if the price is same. In many cases these types of factors are unknown to us. We represent all such unknown factors with this $u$.&lt;/p&gt;
+&lt;p&gt;Without the presence of these other factors, this relation would be deterministic. In that case if $P$ increased by one dollar, $D$ will decrease by $b$ unit. We can write this as. 
+$$\frac{dD}{dP}=-b$$ 
+Where, demand is changing with the price when other things are not changing. But in reality,  many things are changing at the same time. So, if the price $P$ increased by one dollar, that does not necessarily mean that the demand $D$ will decrease by $b$ unit exactly. So there exist some uncertainty in the movement of demand&lt;/p&gt;
+&lt;p&gt;In reality, we observe movements in demand for energy drinks even without the change in price. If we are in a perfect deterministic world, this will not be case. But unfortunately(or fortunately) that is not the world we live in. This &lt;em&gt;randomness&lt;/em&gt; in demand is represented by this $u$&lt;/p&gt;
+&lt;p&gt;Now, if we generalize this model
+$$Y_i= β_1+β_2 X_{2i}+β_3 X_{3i}+⋯+β_k X_{ki}+u_i$$&lt;/p&gt;
+&lt;p&gt;Henceforth we will be calling $Y$ as endogenous or dependent variable and $X$’s as exogenous or explanatory variable. Also, $β$&#39;s are parameter for the model. Here, $i=1(1)n$ : number of observation and $k$ : number of parameters.&lt;/p&gt;
+&lt;p&gt;As mentioned in the previous post, we are going to make certain assumptions about that ‘u’. These assumptions are very essential to build an econometric model to produce &lt;em&gt;best possible results&lt;/em&gt;. We will discuss later what we mean by  &lt;em&gt;best possible result&lt;/em&gt;.For now, lets focus on the assumptions-&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;1&lt;/em&gt;. All the effects of excluded variables cancel each other  $$E(u_t )=0$$&lt;/p&gt;
+&lt;p&gt;This means that those unobservable factors in our model has Zero effect &lt;strong&gt;on average&lt;/strong&gt;.  In other ways we can say that while there might be variations, on average those variations are Zero.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2&lt;/em&gt;. The spread or variance of the error term is constant for all the values of $X$’s $$Var(u_t )=E(u_t^2 )=constant$$&lt;/p&gt;
+&lt;p&gt;The variation in dependent variable (for our example demand) due to unobserved factors should stay same for any given value of dependent variables( price)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;3&lt;/em&gt;. No association between error terms. $$E(u_t u_s )=0$$&lt;/p&gt;
+&lt;p&gt;This means that the unobserved factors are not dependent on each other.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;4&lt;/em&gt;.Explanatory variables and the error terms are not also correlated.  $$E(X_{jt} u_s )=0$$&lt;/p&gt;
+&lt;p&gt;No association for included and excluded variables. Or the unobserved factor does not affect the observed factor.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;5&lt;/em&gt;. No exact linear relationship among $X$’s. Which means no perfect collinearity or no redundant variables. Which means the observed factors, or the independent factor should not be dependent on others !&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;6&lt;/em&gt;. Error term is normally distributed. $$u_t \sim N(0, \sigma^2)$$Or we can say it is well behaved.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;7&lt;/em&gt;. There shall be no specification bias or error. Or we can say the model is correct.&lt;/p&gt;
+&lt;p&gt;Many of these observation seems unrealistic. In real life two factors can be related to each other or past observations. Many of these assumptions does not work in real life, at least directly. Then, the question is why we should make these assumptions in the first place. The answers lie in our quest for aforementioned &lt;em&gt;best possible result&lt;/em&gt; or in this case &lt;em&gt;best possible estimation&lt;/em&gt; of the coefficient $\beta$.&lt;/p&gt;
+&lt;p&gt;In next post we will discuss that how do we estimate these $\beta$.s and why that estimate should be the &lt;em&gt;best possible estimation&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/post/hello-world/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/hello-world/</guid>
+      <description>&lt;p&gt;I  started with Machine Learning (if you can call it that ) by implementing some python code that I had found in a blog post about linear regression in my Jupyter notebook. In the first few days I tried implementing those algorithms one after the other. Things did not seem to be that hard and I thought to myself: Aha! I can do machine learning as well. Well things did not turn out to be that simple . I decided to check out some papers on ML and well:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-spud&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/spud.gif&#34; data-caption=&#34;Spud!&#34;&gt;
+
+
+  &lt;img src=&#34;/img/spud.gif&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Spud!
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Math and Math and more math . I did have some idea regarding Optimization techniques and Linear Algebra but not really at the level required to read the papers on ML. I had two choices: Do what I was doing i.e. have some rudimentary knowledge of ML and implement them without really understanding at a fundamental level what these algorithms were about or dig deep into the mathematics and try to understand what these algorithms really represented. Fortunately, I already had some knowledge of Linear Algebra and Multivariate Calculus. In these series of blog posts, I shall try to share with you some of the concepts I have learnt and shall be learning. (I hope some people read it 😊) I hope to learn from you guys as well.&lt;/p&gt;
+&lt;p&gt;So, let’s get started:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-pillars-of-machine-learning&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/pillars_ml.png&#34; data-caption=&#34;Pillars of Machine Learning&#34;&gt;
+
+
+  &lt;img src=&#34;/img/pillars_ml.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Pillars of Machine Learning
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The four pillars of machine learning  are built on the foundation of solid Mathematics.&lt;/p&gt;
+&lt;p&gt;1.Linear Algebra:&lt;/p&gt;
+&lt;p&gt;2.Probablity Theory&lt;/p&gt;
+&lt;p&gt;3.Good old Calculus.&lt;/p&gt;
+&lt;p&gt;You may have seen the following equation. Even if you have not do not worry.&lt;/p&gt;
+&lt;p&gt;$$Y=X\beta+u$$
+This is actually our  regression model. You may or may not have seen the following expression&lt;/p&gt;
+&lt;p&gt;$$\beta=(X^TX)^{-1}X^TY$$
+This is the matrix representation of ‘estimate’ of ‘β’.&lt;/p&gt;
+&lt;p&gt;We use calculus and techniques of linear algebra to arrive at this solution. We are going to learn what vectors are ,what matrices are ,and how to derive the above estimate of β. I hope to take you through an enjoyable ride.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Probably true?</title>
+      <link>/post/probably-true/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/probably-true/</guid>
+      <description>&lt;p&gt;I came across this post somewhere I cannot recall. A man (call him Maity (a)) asks a professor, the probability of there being a bomb on the plane that he’s travelling in. A bit confused, the professor tells him, it’s a rare event. Maybe one in a million? Now Maity asks again, what would be the probability of there being two bombs on that plane?! Utterly confused, the professor replies, well, if the two events were to be independent (which is highly unlikely), it would be the square of the first probability, i.e. one in a trillion. Satisfied, Maity now always carries a bomb with him, whenever he’s flying. Just to lower the chances of the second bomb being on the plane.&lt;/p&gt;
+&lt;p&gt;If Maity’s reasoning were true, then we could reduce the chances of terrorist attacks by simply carrying bombs on planes.&lt;/p&gt;
+&lt;p&gt;Let’s begin.&lt;/p&gt;
+&lt;p&gt;We (not us personally of course, but serious people writing textbooks) define a random experiment as a process that leads to different outcomes when repeated numerous times.&lt;/p&gt;
+&lt;p&gt;Now, look at what went wrong in the situation above. Do you think Maity lowers the probability of the bomb being on that flight if he’s carrying one too? Of course he does not. Maity carrying a bomb, does not reduce the chances of a terrorist planting a bomb on the plane, since these events are statistically independent.&lt;/p&gt;
+&lt;p&gt;Suppose a terrorist plants a bomb, same time as Maity brings his own. This does not imply that the terrorist planting the bomb was because of Maity bringing one. It would be a simple case of two independent events occurring together by chance. This is often called post hoc ergo propter hoc, or the post hoc fallacy (b).&lt;/p&gt;
+&lt;p&gt;Any set of independent events (take two of them, A and B) satisfy:&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\tag{1}
+Pr(A|B) = Pr(A)
+\end{equation}&lt;/p&gt;
+&lt;p&gt;The above literally translates to the following. The chances of event A happening, given that event B has already happened, is same as the chance of event A happening without considering event B at all, since these are in no way related.&lt;/p&gt;
+&lt;p&gt;Take an example.&lt;/p&gt;
+&lt;p&gt;Take A as the event of rainfall on say Dec 1, 2019 and B be the event of me performing a rain dance on 30th November. Sadly, me performing a rain dance does not increase or decrease the probability of rain occurring on Dec 1. We say that A and B are two independent events.&lt;/p&gt;
+&lt;p&gt;Speaking of events A &amp;amp; B, we claim the following four possibilities&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;1&lt;/em&gt;. Both A and B happens&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2&lt;/em&gt;. Neither A nor B happens&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;3&lt;/em&gt;. A happens, B doesn’t&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;4&lt;/em&gt;. B happens, A doesn’t&lt;/p&gt;
+&lt;p&gt;For events that are statistically independent, we know&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+\tag{2}
+Pr(A ∩ B) = Pr(A).Pr(B)
+\end{equation}&lt;/p&gt;
+&lt;p&gt;Coming back to Maity. From his perspective, he thought getting a bomb on the plane would mean a lower probability of there being another bomb (Prof told him one in a trillion, can’t blame him either). Maity is assuming statistical dependence here. Whereas the idea of,&lt;/p&gt;
+&lt;p&gt;$$Pr(Terrorist\ plants\ bomb| Maity\ carries\ bomb) = Pr(Terrorist\ plants\ bomb)$$&lt;/p&gt;
+&lt;p&gt;holds for this case.&lt;/p&gt;
+&lt;p&gt;More than confused, I personally have always found probability theory thought-provoking. How all of this, the technical jargons across disciplines converge to certain themes, certain basic problems that people are trying to solve. And it will be one step at a time, that we cover each of them. Every fancy concept out there; starting from Bayesian Techniques to Causal Inference to certain concepts in Behavioural Science (a personal area of interest) will be broken down to simple bits and pieces. While this post does not define various definitions, this is just an introduction to one of coolest topics out there. Stay tuned 🙂&lt;/p&gt;
+&lt;p&gt;(a) Maity is a friend (good-humored too, I hope), an artist and a co-author of this blog.&lt;/p&gt;
+&lt;p&gt;(b) Literally translating to, “after this, therefore because of this”.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Econometric Model</title>
+      <link>/post/econometric-model/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/econometric-model/</guid>
+      <description>&lt;p&gt;In the field of data analysis, we often use regression models, especially linear regression to verify any hypothesis that we made about the data. Regression models uses different mathematical and statistical tools to analyze the data, find if there exist any pattern in the data, and some-times predicts from that data. Almost everyone, from business to science, use some form of data analysis to understand and analyze the problem in hand. In sciences we always see the usage of “curve fitting” to test any assumption from existing theory.&lt;/p&gt;
+&lt;p&gt;In the case of economic sciences, the usage of data analysis has a special name. As a matter of fact, we call it “&lt;em&gt;Econometrics&lt;/em&gt;” mainly to sperate our selves for natural sciences. But is that so easy? Let us search a bit…&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The word “&lt;em&gt;Econometrics&lt;/em&gt;” means “&lt;em&gt;the measurement in economics&lt;/em&gt;”  But this definition is too simple to digest. This definition is not complete either. Everything in economics is some sort of measurement. So, what is exactly “&lt;em&gt;Econometrics&lt;/em&gt;”?&lt;/p&gt;
+&lt;p&gt;In plain and simple words econometrics is data analysis for economics but with a catch. Unlike natural sciences we not only use it to test theory and predict but also build models. So next time someone says “&lt;em&gt;whatever, it’s just same curve fitting&lt;/em&gt;” – no its not; we build theory with this! It means a lot to us.&lt;/p&gt;
+&lt;p&gt;Now, someone can ask we always used to build models (without even mathematical expression! We are artist!) so why do we need econometrics to build models? To understand this, we need to understand the difference between econometric models and economic model.&lt;/p&gt;
+&lt;p&gt;Now what is a model? Model is nothing but a simple but realistic representation of real-world phenomenon. We always prefer simple models over complex one because they are easier to understand. We assume something about the real world and based on those assumptions we build our models. With simple models there is always a fear of – either over-simplification of assumptions or making unrealistic assumption. Let us have an example-&lt;/p&gt;
+&lt;p&gt;Say we want to measure the demand for monster energy drinks (not sponsored). We may start with assumption that demand of monster energy depends on the price of monster energy. Now based on this assumption we can write a model- If we denote demand for monster energy as D and Price of monster energy as P then we can write –&lt;/p&gt;
+&lt;p&gt;$$D = f(p)$$&lt;/p&gt;
+&lt;p&gt;Now we have a model. But one can say this model is oversimplified and unrealistic. Price of monster energy seldom changes and demand changes from age group. So, may be, we can include age and something else. That makes the model more complete.&lt;/p&gt;
+&lt;p&gt;Now we know what a model is. So, what is an economic model? Economic model is those set of assumptions that simplifies an economic behaviour. Say if we can write the above relation more clearly&lt;/p&gt;
+&lt;p&gt;$$D = a - bp$$&lt;/p&gt;
+&lt;p&gt;That is price is negatively related with the demand. So, this is an economic model. But we know there are some other factor which may also affect this demand for monsters. So, this is just an approximation.&lt;/p&gt;
+&lt;p&gt;In econometric model we try to generalize this thing more. We include the other factors as “&lt;em&gt;disturbance&lt;/em&gt;”. Such as –&lt;/p&gt;
+&lt;p&gt;$$D=a-bP+u$$&lt;/p&gt;
+&lt;p&gt;We assume certain feature about this disturbance later. First, we have one more problem to resolve.&lt;/p&gt;
+&lt;p&gt;While talking about models we always consider ‘&lt;em&gt;linear relation&lt;/em&gt;s’ in economics. But relations can not always be linear. Say this above relation can be –&lt;/p&gt;
+&lt;p&gt;$$D=\frac{a}{p^b} $$&lt;/p&gt;
+&lt;p&gt;But we can always change this into a linear model –&lt;/p&gt;
+&lt;p&gt;$$\ln p = \ln a - b\ln p$$&lt;/p&gt;
+&lt;p&gt;So, from now on when ever we consider any econometric model, we will only talk about linear model what we usually call – “&lt;em&gt;Linear Regression Model&lt;/em&gt;”.&lt;/p&gt;
+&lt;p&gt;Before finishing we should have a look into that “&lt;em&gt;u&lt;/em&gt;” term. As this is what separates an econometric model from an economic model. While economic models are definite econometric models are random mostly due to this “&lt;em&gt;u&lt;/em&gt;” . In the next post we will discuss more about this “&lt;em&gt;u&lt;/em&gt;” .&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

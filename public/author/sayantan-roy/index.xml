@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sayantan Roy | Rationally Misbehaved</title>
+    <link>/author/sayantan-roy/</link>
+      <atom:link href="/author/sayantan-roy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sayantan Roy</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Sayantan Roy</title>
+      <link>/author/sayantan-roy/</link>
+    </image>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/post/hello-world/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/hello-world/</guid>
+      <description>&lt;p&gt;I  started with Machine Learning (if you can call it that ) by implementing some python code that I had found in a blog post about linear regression in my Jupyter notebook. In the first few days I tried implementing those algorithms one after the other. Things did not seem to be that hard and I thought to myself: Aha! I can do machine learning as well. Well things did not turn out to be that simple . I decided to check out some papers on ML and well:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-spud&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/spud.gif&#34; data-caption=&#34;Spud!&#34;&gt;
+
+
+  &lt;img src=&#34;/img/spud.gif&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Spud!
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Math and Math and more math . I did have some idea regarding Optimization techniques and Linear Algebra but not really at the level required to read the papers on ML. I had two choices: Do what I was doing i.e. have some rudimentary knowledge of ML and implement them without really understanding at a fundamental level what these algorithms were about or dig deep into the mathematics and try to understand what these algorithms really represented. Fortunately, I already had some knowledge of Linear Algebra and Multivariate Calculus. In these series of blog posts, I shall try to share with you some of the concepts I have learnt and shall be learning. (I hope some people read it 😊) I hope to learn from you guys as well.&lt;/p&gt;
+&lt;p&gt;So, let’s get started:&lt;/p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-pillars-of-machine-learning&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/img/pillars_ml.png&#34; data-caption=&#34;Pillars of Machine Learning&#34;&gt;
+
+
+  &lt;img src=&#34;/img/pillars_ml.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Pillars of Machine Learning
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The four pillars of machine learning  are built on the foundation of solid Mathematics.&lt;/p&gt;
+&lt;p&gt;1.Linear Algebra:&lt;/p&gt;
+&lt;p&gt;2.Probablity Theory&lt;/p&gt;
+&lt;p&gt;3.Good old Calculus.&lt;/p&gt;
+&lt;p&gt;You may have seen the following equation. Even if you have not do not worry.&lt;/p&gt;
+&lt;p&gt;$$Y=X\beta+u$$
+This is actually our  regression model. You may or may not have seen the following expression&lt;/p&gt;
+&lt;p&gt;$$\beta=(X^TX)^{-1}X^TY$$
+This is the matrix representation of ‘estimate’ of ‘β’.&lt;/p&gt;
+&lt;p&gt;We use calculus and techniques of linear algebra to arrive at this solution. We are going to learn what vectors are ,what matrices are ,and how to derive the above estimate of β. I hope to take you through an enjoyable ride.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
